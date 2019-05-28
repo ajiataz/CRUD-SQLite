@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp">
+
+    <Button
+        android:id="@+id/buttonCreateStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Create Student"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewRecordCount"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCreateStudent"
+        android:text="0 records found"
+        android:padding="1dp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRecordCount" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
